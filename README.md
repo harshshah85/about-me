@@ -1,37 +1,24 @@
-## Welcome to GitHub Pages
+# Harsh Shah — Personal Site
 
-You can use the [editor on GitHub](https://github.com/harshshah85/about-me/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Source for my personal "about me" site, published with GitHub Pages.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+**Live:** https://harshshah85.github.io/about-me/
 
-### Markdown
+## About
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Enterprise Solutions Architect with 19 years building and transforming enterprise
+platforms across financial services, insurance, and industrial sectors —
+spanning cloud, AI, and CTO-level customer advisory.
 
-```markdown
-Syntax highlighted code block
+## Structure
 
-# Header 1
-## Header 2
-### Header 3
+- `index.html` — the full single-page site (semantic HTML + embedded CSS, no build step)
+- `assets/Harsh-Shah-Resume.pdf` — downloadable résumé
+- `.nojekyll` — serves the static site directly, bypassing Jekyll
 
-- Bulleted
-- List
+## Local preview
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```bash
+python3 -m http.server 8000
+# then open http://localhost:8000
 ```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/harshshah85/about-me/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
