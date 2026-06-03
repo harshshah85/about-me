@@ -108,6 +108,20 @@
     -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
   }
   .hero-stats .stat .lbl { font-size: .85rem; color: #9fb0d4; margin-top: 2px; }
+  .hero-grid { display: flex; align-items: center; gap: 56px; }
+  .hero-copy { flex: 1; min-width: 0; }
+  .hero-photo { flex-shrink: 0; }
+  .hero-photo img {
+    width: 300px; height: 300px; border-radius: 50%; object-fit: cover; display: block;
+    border: 5px solid rgba(255,255,255,.12);
+    box-shadow: 0 24px 60px rgba(0,0,0,.45), 0 0 0 1px rgba(255,255,255,.06);
+  }
+  @media (max-width: 860px) {
+    .hero-grid { flex-direction: column-reverse; gap: 36px; text-align: center; align-items: center; }
+    .hero .tagline, .hero .lede { margin-left: auto; margin-right: auto; }
+    .hero-actions, .hero-stats { justify-content: center; }
+    .hero-photo img { width: 220px; height: 220px; }
+  }
 
   /* ---------- Section headings ---------- */
   .sec-head { margin-bottom: 44px; }
@@ -226,7 +240,8 @@
 
 <!-- ============ HERO ============ -->
 <header class="hero">
-  <div class="wrap">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
     <span class="eyebrow">Solutions Architect</span>
     <h1>Harsh Shah<br><span class="grad">Architecting enterprise transformation.</span></h1>
     <p class="tagline">Digital Transformation &nbsp;·&nbsp; Cloud &amp; AI &nbsp;·&nbsp; CTO-Level Customer Advisory</p>
@@ -241,6 +256,10 @@
       <div class="stat"><div class="num">17+</div><div class="lbl">Years at Infosys (engineer → director)</div></div>
       <div class="stat"><div class="num">24+</div><div class="lbl">Largest team led</div></div>
       <div class="stat"><div class="num">AWS</div><div class="lbl">Certified Solutions Architect</div></div>
+    </div>
+    </div><!-- /hero-copy -->
+    <div class="hero-photo">
+      <img src="assets/harsh-shah.jpg" alt="Harsh Shah" width="300" height="300">
     </div>
   </div>
 </header>
