@@ -10,6 +10,8 @@ Enterprise Solutions Architect with 19 years building and transforming enterpris
 platforms across financial services, insurance, and industrial sectors —
 spanning cloud, AI, and CTO-level customer advisory.
 
+I stay hands-on - build the blueprints, writing API contracts, review the MRs and debugged the integrations when it mattered.
+
 ## Structure
 
 - `index.html` — the full single-page site (semantic HTML + embedded CSS, no build step)
